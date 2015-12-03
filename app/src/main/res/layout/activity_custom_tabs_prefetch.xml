@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context=".activity.CustomTabsSupportPreFetchActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="8dp"/>
+
+    <Button
+        android:id="@+id/may_launch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="May Launch"/>
+
+    <Button
+        android:id="@+id/launch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Launch"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="※ May Launchを押さずにLaunchを押すと通常の呼び出し、May Launchを押した後にLaunchを押すとPreFetchになります"
+        android:textSize="10sp"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="8dp"/>
+
+    <Button
+        android:id="@+id/launch_web_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Launch WebView"/>
+
+    <Button
+        android:id="@+id/launch_browser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Launch Browser"/>
+
+
+</LinearLayout>
+

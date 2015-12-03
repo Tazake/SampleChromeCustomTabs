@@ -1,0 +1,44 @@
+<manifest
+    package="sample.tazake.chrome_custom_tabs"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- For WebView -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.CustomTabsSupportActivity"
+            android:label="@string/title_custom_tabs_support_library"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <activity
+            android:name=".activity.CustomTabsSupportPreFetchActivity"
+            android:label="@string/title_custom_tabs_support_library_prefetch"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <activity
+            android:name=".activity.WebViewActivity"
+            android:label="@string/title_web_view"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+    </application>
+
+</manifest>
