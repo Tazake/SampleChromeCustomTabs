@@ -78,7 +78,6 @@ public class CustomTabsSupportActivity extends AppCompatActivity implements View
         builder.addMenuItem("Menu Share Sample3 ", pendingIntent);
         builder.addMenuItem("Menu Share Sample4 ", pendingIntent);
         builder.addMenuItem("Menu Share Sample5 ", pendingIntent);
-        // これ以上はaddしてもメニューに追加されない
         builder.addMenuItem("Menu Share Sample6 ", pendingIntent);
     }
 
@@ -91,13 +90,9 @@ public class CustomTabsSupportActivity extends AppCompatActivity implements View
 
         PendingIntent pendingIntent = PendingIntent.getActivity(getApplicationContext(), 0, actionIntent, 0);
 
-        Bitmap icon = BitmapFactory.decodeResource(getResources(), android.R.drawable.ic_menu_share);
-        builder.setActionButton(icon, "Action Share Sample ", pendingIntent, true);
-
-        // 最後に追加したアクションが表示される
-        Bitmap icon2 = BitmapFactory.decodeResource(getResources(), android.R.drawable.ic_menu_my_calendar);
-        builder.setActionButton(icon2, "Action Share Sample2 ", pendingIntent);
-        // builder.setActionButton(icon2, "Action Share Sample2 ", pendingIntent, true /* tintの指定も可能 */);
+        Bitmap icon = BitmapFactory.decodeResource(getResources(), android.R.drawable.ic_menu_my_calendar);
+        builder.setActionButton(icon, "Action Share Sample", pendingIntent);
+        // builder.setActionButton(icon, "Action Share Sample", pendingIntent, true /* tintの指定も可能 */);
     }
 
 
