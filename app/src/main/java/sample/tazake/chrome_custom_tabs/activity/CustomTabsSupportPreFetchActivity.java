@@ -79,7 +79,7 @@ public class CustomTabsSupportPreFetchActivity extends AppCompatActivity impleme
                 }
             }
         });
-        mCustomTabsSession.mayLaunchUrl(URI, null, null);
+        boolean isSuccess = mCustomTabsSession.mayLaunchUrl(URI, null, null);
     }
 
     private void launch() {
