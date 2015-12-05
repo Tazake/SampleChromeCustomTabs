@@ -34,6 +34,7 @@ public class WebViewActivity extends AppCompatActivity {
         }
 
         WebView webView = (WebView) findViewById(R.id.web);
+        webView.getSettings().setJavaScriptEnabled(true);
         webView.loadUrl(mUrl);
     }
 
